@@ -1,9 +1,4 @@
-'''
-Created on Jun 24, 2016
 
-@author: antis
-
-'''
 from PySide.QtGui import QGridLayout,QTreeView, QFileSystemModel,QWidget
 from PySide.QtCore import QDir
 class layout():
