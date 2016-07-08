@@ -10,7 +10,8 @@ class mainWindow(QMainWindow):
         self.workspace = QTabWidget()
         self.workspace.setTabsClosable(True)
         
-        menuBar.menuBar.mBar(self)
+        self.menuBar = menuBar.menuBar()
+        self.setMenuBar(self.menuBar)
         Layout.layout.setLayout(self)
         
         toolBar.toolBar.tBar(self)

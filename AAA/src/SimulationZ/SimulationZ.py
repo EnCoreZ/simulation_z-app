@@ -1,7 +1,7 @@
 
 import sys,time
 from PySide.QtGui import QApplication
-from Model.Main import mainWindow
+from Viewer.Main import mainWindow
 if __name__ == "__main__":
 
     try:
