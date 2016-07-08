@@ -1,16 +1,16 @@
 from PySide.QtGui import QMenu ,QMenuBar
 #from Controler import menuBarActions
-class menuBar():
-    def mBar(self):
+class menuBar(QMenuBar):
+    def __init__(self):
         #menuBarActions.menuBarActions.mBarActions(self)
-        menu = QMenuBar()
-        fileMenu = QMenu()
-        fileMenu.setTitle("File")
-        fileNewMenu = QMenu()
-        fileNewMenu.setTitle("New")
+        QMenuBar.__init__(self)
+        self.fileMenu = QMenu()
+        self.fileMenu.setTitle("File")
+        self.fileNewMenu = QMenu()
+        self.fileNewMenu.setTitle("New")
         #fileNewMenu.addAction(self.newTxtAction)
-        fileMenu.addMenu(fileNewMenu)
-        fileMenu.addSeparator()
+        self.fileMenu.addMenu(self.fileNewMenu)
+        self.fileMenu.addSeparator()
         
-        menu.addMenu(fileMenu)
-        self.setMenuBar(menu)
+        self.addMenu(self.fileMenu)
+        
