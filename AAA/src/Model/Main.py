@@ -4,7 +4,7 @@ from Viewer import menuBar,Layout,toolBar
 class mainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
-        self.setWindowTitle("Inside")
+        self.setWindowTitle("SimulationZ")
         self.setMinimumSize(700,500)
         self.workspaceLayout = QGridLayout()
         self.workspace = QTabWidget()
