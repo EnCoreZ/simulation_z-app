@@ -12,7 +12,8 @@ class mainWindow(QMainWindow):
         
         self.menuBar = menuBar.menuBar()
         self.setMenuBar(self.menuBar)
-        Layout.layout.setLayout(self)
+        self.mainArea = Layout.layout()
+        self.setCentralWidget(self.mainArea)
         
         toolBar.toolBar.tBar(self)
         toolBar.toolBar.toolBarComponents(self)

@@ -58,7 +58,7 @@ class HierarchyTreeView(QTreeView):
         self.currentIndex().internalPointer().setName("NOVO")
     
     
-    def mousePressEvent(self, event)
+    def mousePressEvent(self, event):
         if(self.selectionMode() == QAbstractItemView.SingleSelection):
             self.clearSelection()
             self.setCurrentIndex(QModelIndex())
