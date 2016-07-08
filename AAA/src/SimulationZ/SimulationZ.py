@@ -1,9 +1,3 @@
-'''
-Created on Jun 24, 2016
-
-@author: antis
-'''
-
 
 import sys,time
 from PySide.QtGui import QApplication
@@ -12,10 +6,6 @@ if __name__ == "__main__":
 
     try:
         myApp = QApplication(sys.argv)
-        
-        #Splashscreen
-        #splash = QSplashScreen(QPixmap("Icons/Logo#3_beta.png"))
-        #splash.show()
         time.sleep(1)
         Main = mainWindow()
         Main.showMaximized()
