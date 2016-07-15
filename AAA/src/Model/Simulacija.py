@@ -23,4 +23,3 @@ class Simulacija():
         
         self.Elementi.append(self.newElement)
         
-        print("TESQDQWEQWDQW")
