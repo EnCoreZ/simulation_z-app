@@ -1,5 +1,4 @@
 from Model.Element import Element
-from PySide.QtGui import QBrush
 from PySide.QtGui import QPen
 class Simulacija():
     def __init__(self,sceneView):
