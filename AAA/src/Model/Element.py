@@ -25,8 +25,7 @@ class eleIliKolo(Element):
         self.grafick= iliKolo(self)
         self.data= "ILI KOLO"
         self.prozor=Prozor(self)
-        self.prozor.textEditor.setReadOnly(True)
-        
+        self.prozor.textEditor.setReadOnly(True)      
         
 class PrikazniElement(Element):
     def __init__(self):
