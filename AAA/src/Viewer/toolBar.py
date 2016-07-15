@@ -1,8 +1,10 @@
-#from Controler import toolBarActions
-class toolBar():
-    def toolBarComponents(self):
-        #toolBarActions.toolBarAction.tBarActions(self)
-        #self.toolBar.addAction(self.newTxtAction)
-        self.toolBar.addSeparator()
-    def tBar(self):
-        self.toolBar = self.addToolBar('Main')
+
+from PySide.QtGui import QToolBar
+from Controler.toolBarActions import toolBarAction
+class toolBar(QToolBar):
+    
+    def __init__(self,Editor):
+        QToolBar.__init__(self)
+        self.Editor=Editor
+        self.toolBarAkcije=toolBarAction.tBarActions(self)
+        self.addAction(self.iKolo)

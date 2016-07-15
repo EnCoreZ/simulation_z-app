@@ -1,6 +1,7 @@
 
-from PySide.QtGui import QMainWindow,QGridLayout,QTabWidget
-from Viewer import menuBar,Layout,toolBar
+from PySide.QtGui import QMainWindow,QGridLayout,QTabWidget,QGraphicsScene,QGraphicsView
+from Viewer import menuBar,Layout
+from Model.Editor import Editor
 class mainWindow(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
@@ -10,11 +11,17 @@ class mainWindow(QMainWindow):
         self.workspace = QTabWidget()
         self.workspace.setTabsClosable(True)
         
+        self.graphScene = QGraphicsScene()
+        self.sceneView = QGraphicsView()
+        self.sceneView.setScene(self.graphScene)
+        
+        self.Editor = Editor(self.sceneView)
+        
         self.menuBar = menuBar.menuBar()
         self.setMenuBar(self.menuBar)
-        self.mainArea = Layout.layout()
+
+        self.mainArea = Layout.layout(self.Editor,self.sceneView)
         self.setCentralWidget(self.mainArea)
-        
-        toolBar.toolBar.tBar(self)
-        toolBar.toolBar.toolBarComponents(self)
+
+        self.toolBar = self.mainArea.childAt(1,0)
         
