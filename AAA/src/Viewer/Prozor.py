@@ -14,6 +14,7 @@ class Prozor(QWidget):
         self.focusWidget()
         #editor teksta
         self.textEditor = QTextEdit()
+        self.textEditor.setText(self.element.data)
         #dodajemo dugmad za primenu i odbacivanje promena
         #i povezujemo ih sa odgovarajucim funkcijama
         self.dugmeOk = QPushButton("Potvrdi")

@@ -8,3 +8,5 @@ class toolBar(QToolBar):
         self.Editor=Editor
         self.toolBarAkcije=toolBarAction.tBarActions(self)
         self.addAction(self.iKolo)
+        self.addAction(self.iliKolo)
+        self.addAction(self.element)
