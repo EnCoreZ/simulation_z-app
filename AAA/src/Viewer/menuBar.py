@@ -1,10 +1,10 @@
 from PySide.QtGui import QMenu ,QMenuBar
 from Controler import menuBarActions
 class menuBar(QMenuBar):
-    def __init__(self):
+    def __init__(self,prozor):
         
         QMenuBar.__init__(self)
-        
+        self.prozor=prozor
         menuBarActions.menuBarActions.mBarActions(self)
         #File
         self.fileMenu = QMenu()

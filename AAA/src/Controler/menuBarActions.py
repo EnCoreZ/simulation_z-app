@@ -6,7 +6,7 @@ class menuBarActions():
         self.openFileAction = QAction(QIcon('Icons/new.png'),"Open",self)
         self.saveAction = QAction(QIcon('Icons/new.png'),"Save",self)
         self.saveAsAction = QAction(QIcon('Icons/new.png'),"Save As",self)
-        self.exitProgramAction = QAction(QIcon('Icons/new.png'),"Exit",self)
+        self.exitProgramAction = QAction(QIcon('Icons/new.png'),"Exit",self,triggered = self.prozor.close)
         
         self.undoAction = QAction(QIcon('Icons/new.png'),"Undo",self)
         self.redoAction = QAction(QIcon('Icons/new.png'),"Redo",self)
