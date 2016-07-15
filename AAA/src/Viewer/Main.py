@@ -17,4 +17,4 @@ class mainWindow(QMainWindow):
         
         toolBar.toolBar.tBar(self)
         toolBar.toolBar.toolBarComponents(self)
-        
+        print('ughtstser')
