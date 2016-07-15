@@ -24,7 +24,4 @@ class mainWindow(QMainWindow):
         self.mainArea = Layout.layout(self.Editor,self.sceneView)
         self.setCentralWidget(self.mainArea)
         
-        self.element = Element()
-        self.prozor = Prozor(self.element)
-        self.prozor.show()
         self.toolBar = self.mainArea.childAt(1,0)
