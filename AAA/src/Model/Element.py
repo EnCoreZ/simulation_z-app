@@ -1,9 +1,12 @@
 from Viewer.GraphicItem import GraphicItem
-from Viewer.prozor import prozor
+from Viewer.Prozor import Prozor
 class Element():
     def __init__(self):
+        self.ime = "element"
         self.grafics = GraphicItem(self)
-        self.prozor=prozor()
+        self.data = ""
+        self.prozor=Prozor(self)
+        
     
 class PrikazniElement(Element):
     def __init__(self):

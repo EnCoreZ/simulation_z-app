@@ -19,7 +19,7 @@ class Simulacija():
         self.br_elemenata+=1
         self.newElement=Element()
         
-        self.Scene.scene().addRect(self.newElement.grafics.rect(),pen=QPen())
+        self.Scene.scene().addItem(self.newElement.grafics)
         
         self.Elementi.append(self.newElement)
         
